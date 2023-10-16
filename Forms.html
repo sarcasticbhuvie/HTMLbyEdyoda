@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Design</title>
+    <style>
+        * {
+            background-color: azure;
+        }
+
+        form {
+            /* display: flex; */
+            margin: auto;
+            margin-top: 50px;
+            width: 500px;
+            border: 2px solid green;
+            background-color: rgb(173, 203, 204);
+            border-radius: 10px;
+        }
+
+        label,
+        h3 {
+            background-color: rgb(173, 203, 204);
+
+        }
+
+        .gender {
+            display: flex;
+            background-color: rgb(173, 203, 204);
+
+            /* margin: 0; */
+        }
+
+        .radio1 {
+            margin-bottom: 8px;
+            width: 20px;
+            background-color: rgb(173, 203, 204);
+
+            /* padding: 10px; */
+
+        }
+
+        form {
+            padding: 40px;
+        }
+
+        input,
+        label {
+            width: 100%;
+        }
+
+        .term-condition {
+            display: flex;
+            background-color: rgb(173, 203, 204);
+        }
+
+        .submit {
+            background-color: rgb(20, 172, 20);
+            color: #ffff;
+            width: 100px;
+            padding: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-form">
+        <form action="new.html" method="GET">
+            <h3>Signup</h3>
+            <label for="name">Full Name </label></br>
+            <input type="text" class="text"></br>
+            <label for="email">Email</label></br>
+            <input type="email" class="email"></br>
+            <label for="password">Password </label></br>
+            <input type="password" class="text"></br>
+            <label for="confirm-password">Confirm Password </label></br>
+            <input type="password" class="text"></br>
+            <div class="gender">
+                <label for="gender" style="width:50px;">Gender:</label>
+                <input type="radio" class="radio1" name=gender>Male
+                <input type="radio" class="radio1" name=gender>Female
+                <input type="radio" class="radio1" name=gender>Other
+            </div>
+            <label for="securityQuestion">Security Question</label></br>
+            <select name="security-questions">
+                <option value="disabled-select" disabled selected>Please Select</option>
+                <option value="first-pet">What was your first pet</option>
+                <option value="first-job"> What was your first job</option>
+            </select> </br>
+            <textarea name="answerOfSecurityQueston" cols="30" rows="7"></textarea></br>
+            <div class="datalist-new">
+                <input list="technologies" name="technology"/>
+                <datalist id="technologies">
+                    <option value="Html">
+                    <option value="CSS">
+                    <option value="C">
+                    <option value="C++">
+                    <option value="python">
+                    <option value="JS">
+                    <option value="javascript">
+                        <option value="bootstrep">
+                </datalist>
+            </div>
+
+            
+            <div class="term-condition">
+                <input type="checkbox" name="term-conditions" style="width: 15px;" value="accept">
+                I agree to accept term-conditions.</br>
+            </div>
+            <div style="text-align: center; background-color: rgb(173, 203, 204);">
+                <input type="submit" class="submit" value="Register"></br>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
